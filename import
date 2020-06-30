@@ -1,0 +1,36 @@
+## Create RDS first in workbench
+    
+    After endpoint genertation connect to sql
+    
+    in sql create a table salaries (lab Lab3.1)
+          use test;
+
+         drop table if exists salaries;
+
+          create table salaries (
+          gender varchar(1),
+          age int,
+          salary double,
+          zipcode int);
+
+
+        alter table salaries add column `id` int(10) unsigned primary KEY AUTO_INCREMENT;
+        
+     
+   covert the salaries.txt file into csv and then import in mysql.
+   
+   
+   # Immport the data in EMR.
+   
+      sqoop import --connect jdbc:mysql://endpointlink/test --username root --password rootroot
+      
+      table salaries
+      
+     <img src="practical%202%20images/1.PNG>
+   
+    
+   
+
+      
+   
+
